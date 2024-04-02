@@ -14,7 +14,7 @@ const App = () => {
         {nome:"Joao", email: "joao@gmail.com", curso: "SI",media:8}
       ].map(
         (aluno)=> <Aluno nome={aluno.nome} curso={aluno.curso} email={aluno.email} media={aluno.media}/>
-        )
+        ) 
       }
 
     </div>
