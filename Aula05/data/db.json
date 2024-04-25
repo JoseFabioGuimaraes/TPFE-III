@@ -1,0 +1,16 @@
+{
+    "Alunos":[
+        {
+            "id": 1,
+            "nome": "João",
+            "email": "joao@gmail.com",
+            "curso": "Engenharia de Software"
+        },
+        {
+            "id": 2,
+            "nome": "Maria",
+            "email": "maria@gmail.com",
+            "curso": "Engenharia Civil"
+        }
+    ]
+}
