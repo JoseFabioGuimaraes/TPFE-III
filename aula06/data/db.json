@@ -1,0 +1,23 @@
+{
+    "noticias": [
+        {
+            "id": 1,
+            "titulo": "Pocket Design começa nesta sexta-feira",
+            "subtitulo": "A participação, voltada para estudantes da área, é gratuita e não precisa de inscrição",
+            "texto": "Nesta sexta (12) começa mais uma edição do Pocket Design, evento que neste ano tem uma novidade: além de atividades voltadas ao curso de Design de Interiores, a graduação em Design Gráfico, nova na instituição, também será contemplada. A participação, voltada para estudantes da área, é gratuita e não precisa de inscrição. A programação (veja abaixo) vai até a terça-feira (16)."
+        },
+        {
+            "id": 2,
+            "titulo": "MBA em Marketing e Inovação realiza aula magna nesta sexta",
+            "subtitulo": "O encontro terá como tema “O marketing e a inovação que o mercado realmente precisa”",
+            "texto": "O MBA em Marketing e Inovação, pós-graduação do UNIESP, irá realizar sua aula magna nesta sexta-feira (19), a partir das 19h na Sala de Leitura da Biblioteca, 1º andar do Bloco Central. O encontro terá como tema “O marketing e a inovação que o mercado realmente precisa” e terá como ministrantes os professores André Felisberto, Gareth Butcher, Luciana Rabay e Suelen Pinto. A participação é gratuita, não sendo necessária a inscrição."
+          },
+          {
+            "id": 3,
+            "titulo": "Programa oferece 15 vagas estágio remunerado para alunos de Sistemas",
+            "subtitulo": "Em parceria exclusiva com o UNIESP, a Compass UOL abriu seleção para a trilha de formação em RPA – Robobitc Process Automation",
+            "texto": "O MBA em Marketing e Inovação, pós-graduação do UNIESP, irá realizar sua aula magna nesta sexta-feira (19), a partir das 19h na Sala de Leitura da Biblioteca, 1º andar do Bloco Central. O encontro terá como tema “O marketing e a inovação que o mercado realmente precisa” e terá como ministrantes os professores André Felisberto, Gareth Butcher, Luciana Rabay e Suelen Pinto. A participação é gratuita, não sendo necessária a inscrição."
+          }
+
+    ]
+}
