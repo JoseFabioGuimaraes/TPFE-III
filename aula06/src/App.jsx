@@ -3,8 +3,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Inicial from './pages/Inicial'
 import Dpolgpd from './pages/Dpolgpd'
 import Afaculdade from './pages/Afaculdade'
-import Noticias from './pages/Noticias'
+import VisualizaNoticia from './pages/VisualizaNoticia'
 import Navbar from './components/Navbar'
+import NoticiasAxios from './pages/NoticiasAxios'
 
 const App = () => {
   return (
@@ -17,8 +18,9 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Inicial />}/>
         <Route path='/dpo-lgpd' element={<Dpolgpd />}/>
-        <Route path='a-faculdade' element={<Afaculdade />}/>
-        <Route path='noticias' element={<Noticias />}/>
+        <Route path='/a-faculdade' element={<Afaculdade />}/>
+        <Route path='/noticias' element={<NoticiasAxios/>}/>
+        <Route path='/visualiza-noticia/:id' element={<VisualizaNoticia />}/>
       </Routes>
     </BrowserRouter>
   </>
