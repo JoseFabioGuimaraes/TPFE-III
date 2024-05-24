@@ -1,37 +1,50 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import { Box, Typography, Paper, List, ListItem, ListItemText } from '@mui/material'
 
-const url = 'http://localhost:3000/noticias'
+const url = "http://localhost:3000/noticias"
+
 const NoticiasAxios = () => {
 
   const [noticias, setNoticias] = useState([])
 
-  useEffect(()=>{
-    async function fetchData(){
-        try{
-            const reponse = await axios.get(url)
-            setNoticias(reponse.data)
-        }catch(error){
-            console.error("Erro ao buscar as notícias: ",error)
-        }
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const res = await axios.get(url)
+        setNoticias(res.data)
+      } catch (error) {
+        console.error("Erro ao buscar as notícias: ", error)
+      }
     }
     fetchData()
-  },[])
+  }, [])
+
   return (
-    <div>
-      <h1>Notícias</h1>
-      <ul> 
+    <Box sx={{ p: 4 }}>
+      <Typography variant="h3" gutterBottom>Notícias</Typography>
+      <List>
         {
-          noticias.map((noticia)=>(
-            <li key={noticia.id}>
-              <h2><Link to={`/visualiza-noticia/${noticia.id}`}>{noticia.titulo}</Link></h2>
-              <h3>{noticia.subtitulo}</h3>
-            </li>
+          noticias.map((noticia) => (
+            <ListItem key={noticia.id} component={Paper} elevation={3} sx={{ mb: 2 }}>
+              <ListItemText
+                primary={
+                  <Typography variant="h5" component={Link} to={`/visualiza-noticia/${noticia.id}`} sx={{ textDecoration: 'none', color: 'inherit' }}>
+                    {noticia.titulo}
+                  </Typography>
+                }
+                secondary={
+                  <Typography variant="subtitle1">
+                    {noticia.subtitulo}
+                  </Typography>
+                }
+              />
+            </ListItem>
           ))
         }
-      </ul>
-    </div>
+      </List>
+    </Box>
   )
 }
 
